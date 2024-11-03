@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "Upwork Agent",
+    "version": "1.0.0",
+    "description": "Helps navigate and submit proposals on Upwork",
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
