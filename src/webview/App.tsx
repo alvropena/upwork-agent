@@ -1,15 +1,19 @@
-import React from 'react';
-import type { FC } from 'react';
-import { ChakraProvider, Box } from '@chakra-ui/react';
+import { ChakraProvider, Box, Text } from '@chakra-ui/react'
 
-const App: FC = () => {
+export const App = () => {
   return (
     <ChakraProvider>
-      <Box p={4}>
-        Hello World
+      <Box 
+        p={4} 
+        borderRadius="md" 
+        boxShadow="lg" 
+        bg="white"
+        minW="300px"
+      >
+        <Text fontSize="xl" textAlign="center">
+          Hello World!
+        </Text>
       </Box>
     </ChakraProvider>
-  );
-};
-
-export default App;
+  )
+}

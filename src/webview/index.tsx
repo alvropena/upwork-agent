@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { createRoot } from 'react-dom/client';
+import { App } from '../components/App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const container = document.createElement('div');
+container.id = 'upwork-agent-root';
+document.body.appendChild(container);
+
+const root = createRoot(container);
+root.render(<App />);
