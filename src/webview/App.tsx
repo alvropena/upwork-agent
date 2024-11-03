@@ -1,19 +1,18 @@
-import { ChakraProvider, Box, Text } from '@chakra-ui/react'
-
 export const App = () => {
   return (
-    <ChakraProvider>
-      <Box 
-        p={4} 
-        borderRadius="md" 
-        boxShadow="lg" 
-        bg="white"
-        minW="300px"
-      >
-        <Text fontSize="xl" textAlign="center">
-          Hello World!
-        </Text>
-      </Box>
-    </ChakraProvider>
+    <div style={{
+      padding: '1rem',
+      borderRadius: '6px',
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      backgroundColor: 'white',
+      minWidth: '300px'
+    }}>
+      <h1 style={{
+        fontSize: '1.25rem',
+        textAlign: 'center'
+      }}>
+        Hello World!
+      </h1>
+    </div>
   )
 }
